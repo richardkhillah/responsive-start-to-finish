@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/main.css">
@@ -9,12 +9,11 @@
   <body>
 
     <header class="main-header">
-
       <div class="container grid">
 
-        <div class="logo col"><img src="img/logo.svg" alt="Appilicious logo"></div>
+        <div class="logo"><img src="img/logo.svg" alt="Appilicious logo"></div>
 
-        <nav class="main-nav col">
+        <nav class="main-nav">
           <ul class="unstyled-list">
             <li><a href="">Home</a></li>
             <li><a href="">About</a></li>
@@ -24,6 +23,9 @@
           </ul>
         </nav>
 
+        <div class="nav-toggle">
+          <div class="hamburger"></div>
+        </div>
       </div>
     </header>
 
@@ -39,7 +41,11 @@
         </div>
 
         <div class="col">
+<<<<<<< Updated upstream
           <img src="img/phone.png" alt="" class="hero-image">
+=======
+          <img src="img/phone.png" alt="" class="hero-img lg-screen">
+>>>>>>> Stashed changes
         </div>
       </div>
     </section>
@@ -48,22 +54,22 @@
     ==================== -->
     <section class="sales-points">
       <div class="container grid">
-        <h1>Promote your app</h1>
+        <h1 class="col col--full">Promote your app</h1>
 
         <div class="sales-point col">
           <img src="img/sales-responsive.png" alt="">
-          <h2></h2>
-          <p></p>
+          <h2>Responsive design</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Phaselius hendrerit posuere finibus. Phasellus nibh lorem, cursus eu justo in, bibendum rutrum diam.</p>
         </div>
         <div class="sales-point col">
           <img src="img/sales-hand.png" alt="">
-          <h2></h2>
-          <p></p>
+          <h2>Easy to set up</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Phaselius hendrerit posuere finibus. Phasellus nibh lorem, cursus eu justo in, bibendum rutrum diam.</p>
         </div>
         <div class="sales-point col">
           <img src="img/sales-graph.png" alt="">
-          <h2></h2>
-          <p></p>
+          <h2>Great results</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Phaselius hendrerit posuere finibus. Phasellus nibh lorem, cursus eu justo in, bibendum rutrum diam.</p>
         </div>
 
       </div>
@@ -73,12 +79,13 @@
     ==================== -->
     <section class="promo">
       <div class="grid">
+
         <div class="title-box">
           <h1>This app is amazing</h1>
           <p>It does everything you didn’t know an app needed to do.</p>
         </div>
 
-        <div class="col">
+        <div class="col bg-primary">
           <h1>Doing great things for you</h1>
           <h2>Phasellus henrerit psoeuere</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit posuere finibus. Phasellus nibh lorem, cursus eu justo in, bibendum rutrum diam.</p>
@@ -86,10 +93,9 @@
           <a href="" class="btn btn--primary">Get the app</a>
         </div>
 
-        <div class="col img-box">
+        <div class="col img-box lg-screen">
           <img src="img/phone-in-hand.jpg" alt="a hand holding a phone">
         </div>
-
       </div>
     </section>
 
@@ -123,6 +129,18 @@
       </ul>
     </footer>
 
+      <!-- jQuery -->
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+
+    <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/44d23f5f9f.js" crossorigin="anonymous"></script>
+
+    <!-- My own scripts -->
+    <script src="js/scripts.js">
+
+    </script>
   </body>
 </html>
