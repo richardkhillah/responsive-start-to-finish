@@ -448,6 +448,39 @@ template {
   display: none;
 }
 
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 0 0 100%;
+  padding: 0 0.5em;
+}
+.col:first-of-type {
+  padding-left: 0;
+}
+.col:first-of-type {
+  padding-right: 0;
+}
+
+.col--full {
+  flex: 0 0 100%;
+}
+
+@media (min-width: 725px) {
+  .col--1-3 {
+    flex-basis: 33.3333%;
+  }
+
+  .col--2-3 {
+    flex-basis: 66.6666%;
+  }
+
+  .col--1-2 {
+    flex-basis: 50%;
+  }
+}
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -476,6 +509,11 @@ img {
 
 .lg-screen {
   display: none;
+}
+@media (min-width: 725px) {
+  .lg-screen {
+    display: block;
+  }
 }
 
 .bg-primary {
@@ -539,6 +577,11 @@ h2 {
     padding-top: 8em;
   }
 }
+@media (min-width: 725px) {
+  .title-box {
+    max-width: 700px;
+  }
+}
 
 .title-footer {
   text-transform: uppercase;
@@ -556,20 +599,6 @@ h2 {
 
 .text-intro {
   font-size: 1.2rem;
-}
-
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.col {
-  flex: 0 0 100%;
-  padding: 0 0.75em;
-}
-
-.col--full {
-  flex: 0 0 100%;
 }
 
 .main-nav {
@@ -665,9 +694,32 @@ h2 {
   padding-bottom: 8em;
   text-align: center;
 }
+@media (min-width: 725px) {
+  .hero {
+    text-align: left;
+    padding-bottom: 0;
+    height: 80vmin;
+    min-height: 800px;
+  }
+}
+
+@media (min-width: 725px) {
+  .hero-text {
+    margin-top: 10vmax;
+  }
+}
 
 .promo .bg-primary {
+  padding-left: 4em;
+  padding-top: 7.5em;
+  text-align: left;
   padding-bottom: 7.5em;
+  padding-right: 2em;
+}
+.promo .img-box {
+  background-image: url(../img/phone-in-hand.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .sales-points {
@@ -681,6 +733,11 @@ h2 {
 }
 .sales-points .sales-point:last-child {
   margin-bottom: 0;
+}
+@media (min-width: 725px) {
+  .sales-points .sales-point:first-of-type {
+    margin-top: 0;
+  }
 }
 
 footer {
