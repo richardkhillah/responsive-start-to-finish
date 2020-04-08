@@ -540,6 +540,20 @@ h2 {
   }
 }
 
+.title-footer {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 1;
+}
+.title-footer::before, .title-footer::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: white;
+  opacity: 0.25;
+  margin: 0.75em 0;
+}
+
 .text-intro {
   font-size: 1.2rem;
 }
@@ -653,7 +667,7 @@ h2 {
 }
 
 .promo .bg-primary {
-  padding-bottom: 2em;
+  padding-bottom: 7.5em;
 }
 
 .sales-points {
@@ -672,9 +686,44 @@ h2 {
 footer {
   background: #444;
   color: white;
+  padding: 5em 0;
+  position: relative;
+}
+footer::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: url(../img/logo.svg);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.05;
 }
 footer a {
   color: white;
+}
+
+.social-links {
+  display: flex;
+  font-size: 3rem;
+  justify-content: space-around;
+  opacity: 0.8;
+  margin: 0.7em auto;
+}
+
+.nav-footer {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+}
+.nav-footer a {
+  text-decoration: none;
+  font-weight: 700;
 }
 
 .btn {
