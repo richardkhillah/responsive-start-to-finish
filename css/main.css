@@ -617,10 +617,23 @@ h2 {
   justify-content: space-around;
   height: 100vh;
 }
+@media (min-width: 725px) {
+  .main-nav ul {
+    flex-direction: row;
+    height: auto;
+  }
+}
 .main-nav li {
   flex: 1 1 auto;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   display: flex;
+}
+@media (min-width: 725px) {
+  .main-nav li {
+    display: inline-block;
+    text-align: right;
+    border: none;
+  }
 }
 .main-nav a {
   color: white;
@@ -630,11 +643,39 @@ h2 {
   align-items: center;
   justify-content: center;
 }
+@media (min-width: 725px) {
+  .main-nav a {
+    justify-content: flex-end;
+    flex-basis: auto;
+    display: inline;
+  }
+}
 .main-nav a:hover {
   background: rgba(0, 0, 0, 0.1);
 }
+@media (min-width: 725px) {
+  .main-nav a:hover {
+    background: none;
+    color: #8e1046;
+  }
+}
 .main-nav.is-open {
   left: 0;
+}
+@media (min-width: 725px) {
+  .main-nav.is-open {
+    left: 35vw;
+  }
+}
+@media (min-width: 725px) {
+  .main-nav {
+    position: relative;
+    flex: auto;
+    background: none;
+    margin-top: 1em;
+    margin-left: 2em;
+    left: 0;
+  }
 }
 
 .nav-toggle {
@@ -644,6 +685,11 @@ h2 {
   right: 1em;
   top: 1em;
   cursor: pointer;
+}
+@media (min-width: 725px) {
+  .nav-toggle {
+    display: none;
+  }
 }
 
 .hamburger, .hamburger::before, .hamburger::after {
