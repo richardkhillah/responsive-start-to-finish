@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="../../css/main.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Apilicious</title>
   </head>
@@ -11,7 +12,7 @@
     <header class="main-header">
       <div class="container grid">
 
-        <div class="logo"><img src="img/logo.svg" alt="Appilicious logo"></div>
+        <div class="logo"><img src="{{ url_for('static', filename='img/logo.svg')}}" alt="Appilicious logo"></div>
 
         <nav class="main-nav">
           <ul class="unstyled-list">
@@ -41,7 +42,7 @@
         </div>
 
         <div class="col col--1-3">
-          <img src="img/phone.png" alt="" class="hero-img lg-screen">
+          <img src="{{ url_for('static', filename='img/phone.png')}}" alt="" class="hero-img lg-screen">
         </div>
       </div>
     </section>
@@ -53,17 +54,17 @@
         <h1 class="col col--full">Promote your app</h1>
 
         <div class="sales-point col col--1-3">
-          <img src="img/sales-responsive.png" alt="">
+          <img src="{{ url_for('static', filename='img/sales-responsive.png') }}" alt="">
           <h2>Responsive design</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Phaselius hendrerit posuere finibus. Phasellus nibh lorem, cursus eu justo in, bibendum rutrum diam.</p>
         </div>
         <div class="sales-point col col--1-3">
-          <img src="img/sales-hand.png" alt="">
+          <img src="{{ url_for('static', filename='img/sales-hand.png') }}" alt="">
           <h2>Easy to set up</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Phaselius hendrerit posuere finibus. Phasellus nibh lorem, cursus eu justo in, bibendum rutrum diam.</p>
         </div>
         <div class="sales-point col col--1-3">
-          <img src="img/sales-graph.png" alt="">
+          <img src="{{ url_for('static', filename='img/sales-graph.png') }}" alt="">
           <h2>Great results</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Phaselius hendrerit posuere finibus. Phasellus nibh lorem, cursus eu justo in, bibendum rutrum diam.</p>
         </div>
@@ -136,7 +137,7 @@
     <script src="https://kit.fontawesome.com/44d23f5f9f.js" crossorigin="anonymous"></script>
 
     <!-- My own scripts -->
-    <script src="js/scripts.js">
+    <script src="{{ url_for('static', filename='js/scripts.js') }}">
 
     </script>
   </body>
